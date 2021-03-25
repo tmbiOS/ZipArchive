@@ -16,7 +16,9 @@ FOUNDATION_EXPORT const unsigned char ZipArchiveVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ZipArchive/SSZipArchive.h>
 
-#if COCOAPODS
+#if SWIFT_PACKAGE
+#import "SSZipArchive.h"
+#elif COCOAPODS
 #import <SSZipArchive/SSZipArchive.h>
 #else
 #import <ZipArchive/SSZipArchive.h>

@@ -11,7 +11,9 @@
 
 #import <Foundation/Foundation.h>
 
-#if COCOAPODS
+#if SWIFT_PACKAGE
+#import "SSZipCommon.h"
+#elif COCOAPODS
 #import <SSZipArchive/SSZipCommon.h>
 #else
 #import <ZipArchive/SSZipCommon.h>

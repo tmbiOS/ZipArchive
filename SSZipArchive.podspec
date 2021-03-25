@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.osx.deployment_target = '10.9'
   s.watchos.deployment_target = '2.0'
-  s.source_files = 'SSZipArchive/*.{m,h}', 'SSZipArchive/minizip/*.{c,h}'
-  s.public_header_files = 'SSZipArchive/*.h'
+  s.source_files = 'Sources/SSZipArchive/*.{m,h}', 'Sources/SSZipArchive/minizip/*.{c,h}'
+  s.public_header_files = 'Sources/SSZipArchive/*.h'
   s.libraries = 'z', 'iconv'
   s.framework = 'Security'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES',
